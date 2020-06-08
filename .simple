@@ -1,0 +1,26 @@
+set nocompatible              " required
+filetype plugin on
+syntax enable
+
+"path and find, fuzzy file finder
+set path+=**  " search subdir recursively, find ...
+set wildmenu
+
+set number
+
+" Set ignore case, highlight, and incremental searches
+set ignorecase
+set hlsearch
+set incsearch
+
+if exists("+lines")
+  set lines=80
+endif
+if exists("+columns")
+  set columns=120
+endif
+
+" Ctrl + s to save file
+noremap <silent> <C-S>  :update<CR>
+vnoremap <silent> <C-S> :<C-C>:update<CR>
+inoremap <silent> <C-S> <C-O>:update<CR>
