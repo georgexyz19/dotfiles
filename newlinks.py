@@ -32,6 +32,7 @@ def main():
     for f in filenames:
         if os.path.isfile(f) and f.startswith('.') and not f.endswith('.swp'):
             # ln command
+            # os module has link and symlink function
             p1 = subprocess.run(f'ln -f {f} ~/{f}', shell=True, capture_output=True) 
             print('running command: ', f'ln -f {f} ~/{f}', end=' --> ')
             if p1.returncode == 0:

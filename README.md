@@ -1,6 +1,7 @@
 # dotfiles
-vimrc and bashrc dot files
+vimrc dot files
 
 https://stackoverflow.com/questions/18197705/adding-your-vim-vimrc-to-github-aka-dot-files
 
+After git clone the repor, run $python3 newlinks.py to create new hard links in home dir. 
 
