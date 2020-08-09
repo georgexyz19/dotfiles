@@ -147,10 +147,10 @@ inoremap <silent> <C-S> <C-O>:update<CR>
 
 " Change screen size
 if exists("+lines")
-  set lines=80
+  set lines=32
 endif
 if exists("+columns")
-  set columns=120
+  set columns=108
 endif
 
 " The following two lines are for mapping CapsLock key to Esc

@@ -14,10 +14,10 @@ set hlsearch
 set incsearch
 
 if exists("+lines")
-  set lines=80
+  set lines=32
 endif
 if exists("+columns")
-  set columns=120
+  set columns=108
 endif
 
 " Ctrl + s to save file
