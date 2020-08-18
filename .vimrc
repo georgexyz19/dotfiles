@@ -25,6 +25,7 @@ noremap <silent> <C-S>  :update<CR>
 vnoremap <silent> <C-S> :<C-C>:update<CR>
 inoremap <silent> <C-S> <C-O>:update<CR>
 
+" map Tab key to Escape in Ubuntu.
 " au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 " au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
 
