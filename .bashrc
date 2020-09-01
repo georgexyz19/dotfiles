@@ -128,3 +128,6 @@ eval "$(pyenv virtualenv-init -)"
 # by default command ^s freezes vim in linux, and ^q un-freeze it
 # this line disables the ^s from functioning
 stty -ixon  # stop tele-typewriter, -ixon enable xon/xoff flow control
+
+# this is for git
+export GIT_EDITOR=vim
