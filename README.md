@@ -14,5 +14,5 @@ my personal email address in it, so it is better not to publish it on a repo.
 
 Made a big change to the repo.  Change the original .simple to .vimrc, and
 change original .vimrc to .python.  The .python setting has lots of plugins
-enabled.  It seems that some plugins do not work correct.  I do not know which
+enabled.  It seems that some plugins do not work correctly.  I do not know which
 one works well and which one does not. 
