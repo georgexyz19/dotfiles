@@ -1,3 +1,5 @@
+" ~/.vimrc file
+
 set nocompatible              " required
 filetype plugin on
 syntax enable
@@ -5,6 +7,8 @@ syntax enable
 "path and find, fuzzy file finder
 set path+=**  " search subdir recursively, find ...
 set wildmenu
+set wildignore+=**/node_modules/**
+set wildignore+=**/venv/**
 
 set number
 
@@ -14,10 +18,10 @@ set hlsearch
 set incsearch
 
 if exists("+lines")
-  set lines=32
+  set lines=38
 endif
 if exists("+columns")
-  set columns=108
+  set columns=140
 endif
 
 " Ctrl + s to save file
@@ -25,7 +29,8 @@ noremap <silent> <C-S>  :update<CR>
 vnoremap <silent> <C-S> :<C-C>:update<CR>
 inoremap <silent> <C-S> <C-O>:update<CR>
 
-" map Tab key to Escape in Ubuntu.
-" au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
-" au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+"shortcut ^l to mute highlighting
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
+autocmd BufEnter * let &titlestring = ' ' . expand("%:p")             
+set title

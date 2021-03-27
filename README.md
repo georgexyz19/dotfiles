@@ -5,6 +5,15 @@ https://stackoverflow.com/questions/18197705/adding-your-vim-vimrc-to-github-aka
 
 After git clone the repo, run $python3 newlinks.py to create new hard links in home dir. 
 
+3/26/2021
+
+Added a .plugin.vimrc file and updated .bashrc and .vimrc. 
+Also added alias for `vimplugin` and `pytree`
+
+Now I am doing file copy only. No hard link involved.  Do not be too smart!
+new computer: git clone -> cp to home dir
+Revise setting file: cp from home dir -> git repor dir
+
 9/18/2020
 
 Thought about adding .gitconfig file to version control.  But the file has 
