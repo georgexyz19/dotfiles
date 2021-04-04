@@ -23,4 +23,7 @@ let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 nnoremap <C-N> :NERDTree<CR>
 autocmd VimEnter * NERDTree
 
+noremap <C-H> <C-W><C-H>
+noremap <C-L><C-L> <C-W><C-L>
+
 source ~/.vimrc
