@@ -1,4 +1,4 @@
-" ~/.vimrc file
+" ~/.vimrc file, keep it short and neat
 
 set nocompatible              " required
 filetype plugin on
@@ -17,12 +17,8 @@ set ignorecase
 set hlsearch
 set incsearch
 
-if exists("+lines")
-  set lines=38
-endif
-if exists("+columns")
-  set columns=140
-endif
+set lines=38
+set columns=140
 
 " Ctrl + s to save file
 noremap <silent> <C-S>  :update<CR>
