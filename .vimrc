@@ -17,7 +17,7 @@ set ignorecase
 set hlsearch
 set incsearch
 
-set lines=38
+set lines=54
 set columns=140
 
 " Ctrl + s to save file
