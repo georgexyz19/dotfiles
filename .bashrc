@@ -129,3 +129,4 @@ stty -ixon  # stop tele-typewriter,
 
 alias pytree="tree -I 'venv|__pycache__' --sort=name "
 alias vimplugin="vim -u ~/.plugin.vimrc "
+alias black="~/.black.venv/bin/black -l 120 -S "

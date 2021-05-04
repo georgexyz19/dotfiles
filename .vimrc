@@ -17,9 +17,6 @@ set ignorecase
 set hlsearch
 set incsearch
 
-set lines=54
-set columns=140
-
 " Ctrl + s to save file
 noremap <silent> <C-S>  :update<CR>
 vnoremap <silent> <C-S> :<C-C>:update<CR>
