@@ -116,12 +116,16 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Load pyenv automatically by adding
-# the following to ~/.bashrc:
 
-export PATH="/home/george/.pyenv/bin:$PATH"
+# pyenv.run output suggests add first 3 lines to .profile file and 
+#   last time to .bashrc.  It is easy to add all of them here. 
+#   .profile file sources .bashrc under LM
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+
 
 # this is to disable Ctrl + S
 stty -ixon  # stop tele-typewriter, 
